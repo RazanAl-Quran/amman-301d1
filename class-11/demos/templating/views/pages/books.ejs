@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title>Books</title>
+      <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <main>
+        <ul>
+
+            <% books.forEach( (book) => { %>
+
+              <li>
+                  <div><%= book.title %></div>
+                  <div><%= book.author %></div>
+                  <div><%= book.description %></div>
+                  <div><img src="<%= book.image %>" /></div>
+              </li>
+
+            <% }); %>
+
+        </ul>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/app.js"></script>
+  </body>
+</html>
